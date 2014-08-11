@@ -1,0 +1,66 @@
+/* base.css */
+
+/*\/\/\/\/\/\ Colors \/\/\/\/\/\*/
+$eneco-red: #d21242;
+$eneco-orange: #ec740f;
+
+.eneco-red {
+  color: $eneco-red;
+}
+
+.eneco-orange {
+  color: $eneco-orange;
+}
+
+/*\/\/\/\/\/\ Reset \/\/\/\/\/\*/
+body {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+img {
+  display: block;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  margin: 0px;
+}
+
+/*\/\/\/\/\/\ Lettertype \/\/\/\/\/\*/
+.standaardText {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px; 
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/*\/\/\/\/\/\ Paddings \/\/\/\/\/\*/
+.paddingTop {
+  padding-bottom: 30px;
+}
+
+.paddingBottom {
+  padding-bottom: 30px;
+}
+
+/*\/\/\/\/\/\ Bereken Classes \/\/\/\/\/\*/
+#content {
+  #2classes.standaardText {
+    @extend .standaardText;
+    @extend .eneco-red;
+  }
+
+  #3classes.standaardText {
+    @extend .standaardText;
+    @extend .eneco-orange;
+    @extend .underline;
+  }
+}
