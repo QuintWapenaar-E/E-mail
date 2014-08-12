@@ -1,12 +1,12 @@
 /* base.css */
 /*\/\/\/\/\/\ Colors \/\/\/\/\/\*/
 /* line 7, ../voorbeeld.scss */
-.eneco-red, #content #2classes.standaardText {
+.eneco-red, #content #twee.standaardText {
   color: #d21242;
 }
 
 /* line 11, ../voorbeeld.scss */
-.eneco-orange, #content #3classes.standaardText {
+.eneco-orange, #content #drie.standaardText {
   color: #c6c6c6;
 }
 
@@ -33,14 +33,14 @@ img {
 
 /*\/\/\/\/\/\ Lettertype \/\/\/\/\/\*/
 /* line 35, ../voorbeeld.scss */
-.standaardText, #content #2classes.standaardText, #content #3classes.standaardText {
+.standaardText, #content #twee.standaardText, #content #drie.standaardText {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
 
 /* line 41, ../voorbeeld.scss */
-.underline, #content #3classes.standaardText {
+.underline, #content #drie.standaardText {
   text-decoration: underline;
 }
 

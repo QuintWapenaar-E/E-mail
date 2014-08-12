@@ -53,12 +53,12 @@ img {
 
 /*\/\/\/\/\/\ Bereken Classes \/\/\/\/\/\*/
 #content {
-  #2classes.standaardText {
+  #twee.standaardText {
     @extend .standaardText;
     @extend .eneco-red;
   }
 
-  #3classes.standaardText {
+  #drie.standaardText {
     @extend .standaardText;
     @extend .eneco-orange;
     @extend .underline;
