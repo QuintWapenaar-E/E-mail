@@ -7,42 +7,14 @@
 <meta name="format-detection" content="telephone=no" />
 <title>Test</title>
 <style type="text/css">
-.eneco-red, #content [lang=twee].standaardText {
-  color: #d21242;
-}
-.eneco-orange, #content [lang=drie].standaardText {
-  color: #c6c6c6;
-}
-body {
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-}
-img {
-  display: block;
-  line-height: 100%;
-  outline: none;
-  text-decoration: none;
-  margin: 0px;
-}
-.standaardText, #content [lang=twee].standaardText, #content [lang=drie].standaardText {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-}
-.underline, #content [lang=drie].standaardText {
-  text-decoration: underline;
-}
-.paddingTop {
-  padding-bottom: 30px;
-}
-.paddingBottom {
-  padding-bottom: 30px;
-}
+.eneco-red, #content .twee .standaardText { color: #d21242; }
+.eneco-orange, #content .drie .standaardText { color: #c6c6c6; }
+body { width: 100% !important; margin: 0; padding: 0; background-color: #ffffff; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+img { display: block; line-height: 100%; outline: none; text-decoration: none; margin: 0px; }
+.standaardText, #content .twee .standaardText, #content .drie .standaardText { font-family: Verdana, Geneva, sans-serif; font-size: 14px; line-height: 20px; }
+.underline, #content .drie .standaardText { text-decoration: underline; }
+.paddingTop { padding-bottom: 30px; }
+.paddingBottom { padding-bottom: 30px; }
 </style>
 </head>
 <body>
@@ -68,9 +40,9 @@ img {
       <td align="center" valign="top"> 
         <table align="center" width="600" border="0" cellspacing="0" cellpadding="0">
           <td class="standaardText">Hier komt tekst met 1 class en met 1 Sass class</td>
-          <td id="twee" class="standaardText">Hier komt tekst met 1 class en met 2 Sass class</td>
-          <td id="drie" class="standaardText">Hier komt tekst met 1 class en met 3 Sass class</td>
-          <td id="drie" class="standaardText">Test Test</td>
+          <div class="twee"><td class="standaardText">Hier komt tekst met 1 class en met 2 Sass class</td></div>
+          <div class="drie"><td class="standaardText">Hier komt tekst met 1 class en met 3 Sass class</td></div>
+          <div class="drie"><td class="standaardText">Test Test</td></div>
         </table>
       </td>
     </div>

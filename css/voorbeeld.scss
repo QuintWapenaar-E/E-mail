@@ -53,14 +53,17 @@ img {
 
 /*\/\/\/\/\/\ Bereken Classes \/\/\/\/\/\*/
 #content {
-  #twee.standaardText {
-    @extend .standaardText;
-    @extend .eneco-red;
+  .twee {
+    .standaardText {
+      @extend .standaardText;
+      @extend .eneco-red;
+    }
   }
-
-  #drie.standaardText {
-    @extend .standaardText;
-    @extend .eneco-orange;
-    @extend .underline;
+  .drie {
+    .standaardText {
+      @extend .standaardText;
+      @extend .eneco-orange;
+      @extend .underline;
+    }
   }
 }
