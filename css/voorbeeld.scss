@@ -1,28 +1,18 @@
 /* base.css */
 
 /*\/\/\/\/\/\ Colors \/\/\/\/\/\*/
-$eneco-red: #d21242;
-$eneco-orange: #c6c6c6;
+$red: #d21242;
+$dark-gray: #414141;
 
-.eneco-red {
-  color: $eneco-red;
+.red {
+  color: $red;
 }
 
-.eneco-orange {
-  color: $eneco-orange;
+.dark-gray {
+  color: $dark-gray;
 }
 
 /*\/\/\/\/\/\ Reset \/\/\/\/\/\*/
-body {
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-}
-
 img {
   display: block;
   line-height: 100%;
@@ -31,39 +21,52 @@ img {
   margin: 0px;
 }
 
+/*\/\/\/\/\/\ Lay-out \/\/\/\/\/\*/
+table {
+  -premailer-cellspacing: 0;
+  -premailer-cellpadding: 0;
+}
+
+[class=tablefullWidth], [class=fullWidth] {
+  -premailer-width: 600;
+
+  @media only screen and (max-width: 625px) {
+    width:100% !important;
+    max-width:100% !important;
+    text-align:center !important;
+  }
+}
+
 /*\/\/\/\/\/\ Lettertype \/\/\/\/\/\*/
 .standaardText {
   font-family: Verdana, Geneva, sans-serif;
+  color: $dark-gray;
   font-size: 14px;
-  line-height: 20px; 
+  line-height: 20px;
 }
 
-.underline {
-  text-decoration: underline;
+.title {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  color:$red;
+  font-weight:bold;
+  @extend .paddingBottom;
 }
 
 /*\/\/\/\/\/\ Paddings \/\/\/\/\/\*/
 .paddingTop {
-  padding-bottom: 30px;
+  padding-top: 28px;
 }
 
 .paddingBottom {
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 
 /*\/\/\/\/\/\ Bereken Classes \/\/\/\/\/\*/
-#content {
-  .twee {
-    .standaardText {
+.text {
+  td.fullWidth {
+      @extend .paddingBottom;
       @extend .standaardText;
-      @extend .eneco-red;
-    }
-  }
-  .drie {
-    .standaardText {
-      @extend .standaardText;
-      @extend .eneco-orange;
-      @extend .underline;
-    }
   }
 }

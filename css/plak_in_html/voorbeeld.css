@@ -1,22 +1,26 @@
 /* base.css */
 /*\/\/\/\/\/\ Colors \/\/\/\/\/\*/
-.eneco-red, #content .twee .standaardText { color: #d21242; }
+.red { color: #d21242; }
 
-.eneco-orange, #content .drie .standaardText { color: #c6c6c6; }
+.dark-gray { color: #414141; }
 
 /*\/\/\/\/\/\ Reset \/\/\/\/\/\*/
-body { width: 100% !important; margin: 0; padding: 0; background-color: #ffffff; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
-
 img { display: block; line-height: 100%; outline: none; text-decoration: none; margin: 0px; }
 
-/*\/\/\/\/\/\ Lettertype \/\/\/\/\/\*/
-.standaardText, #content .twee .standaardText, #content .drie .standaardText { font-family: Verdana, Geneva, sans-serif; font-size: 14px; line-height: 20px; }
+/*\/\/\/\/\/\ Lay-out \/\/\/\/\/\*/
+table { -premailer-cellspacing: 0; -premailer-cellpadding: 0; }
 
-.underline, #content .drie .standaardText { text-decoration: underline; }
+[class=tablefullWidth], [class=fullWidth] { -premailer-width: 600; }
+@media only screen and (max-width: 625px) { [class=tablefullWidth], [class=fullWidth] { width: 100% !important; max-width: 100% !important; text-align: center !important; } }
+
+/*\/\/\/\/\/\ Lettertype \/\/\/\/\/\*/
+.standaardText, .text td.fullWidth { font-family: Verdana, Geneva, sans-serif; color: #414141; font-size: 14px; line-height: 20px; }
+
+.title { font-family: Verdana, Geneva, sans-serif; font-size: 22px; line-height: 28px; color: #d21242; font-weight: bold; }
 
 /*\/\/\/\/\/\ Paddings \/\/\/\/\/\*/
-.paddingTop { padding-bottom: 30px; }
+.paddingTop { padding-top: 28px; }
 
-.paddingBottom { padding-bottom: 30px; }
+.paddingBottom, .title, .text td.fullWidth { padding-bottom: 28px; }
 
 /*\/\/\/\/\/\ Bereken Classes \/\/\/\/\/\*/
