@@ -3,6 +3,7 @@
 /*\/\/\/\/\/\ Colors \/\/\/\/\/\*/
 $red: #d21242;
 $dark-gray: #414141;
+$white: #FFFFFF;
 
 .red {
   color: $red;
@@ -18,7 +19,7 @@ img {
   line-height: 100%;
   outline: none;
   text-decoration: none;
-  margin: 0px;
+  margin: 0;
 }
 
 /*\/\/\/\/\/\ Lay-out \/\/\/\/\/\*/
@@ -27,9 +28,14 @@ table {
   -premailer-cellpadding: 0;
 }
 
-[class=tablefullWidth], [class=fullWidth] {
+table.pushbox {
+  -premailer-width: 100%;
+}
+table.sixhunderd, td.sixhunderd {
   -premailer-width: 600;
+}
 
+[class=tablefullWidth], [class=fullWidth] {
   @media only screen and (max-width: 625px) {
     width:100% !important;
     max-width:100% !important;
@@ -52,6 +58,10 @@ table {
   color:$red;
   font-weight:bold;
   @extend .paddingBottom;
+}
+
+.white {
+  .title { color:$white; a {text-decoration:none; color:$white;} }
 }
 
 /*\/\/\/\/\/\ Paddings \/\/\/\/\/\*/
