@@ -2,7 +2,7 @@
 
 /*\/\/\/\/\/\ Colors \/\/\/\/\/\*/
 $red: #d21242;
-$dark-gray: #FF9900;
+$dark-gray: #5E5E5E;
 $white: #FFFFFF;
 
 .red {
@@ -16,31 +16,7 @@ $white: #FFFFFF;
 /*\/\/\/\/\/\ Reset \/\/\/\/\/\*/
 img {
   display: block;
-  line-height: 100%;
-  outline: none;
   text-decoration: none;
-  margin: 0;
-}
-
-/*\/\/\/\/\/\ Lay-out \/\/\/\/\/\*/
-table {
-  -premailer-cellspacing: 0;
-  -premailer-cellpadding: 0;
-}
-
-table.pushbox {
-  -premailer-width: 100%;
-}
-table.sixhunderd, td.sixhunderd {
-  -premailer-width: 600;
-}
-
-[class=tablefullWidth], [class=fullWidth] {
-  @media only screen and (max-width: 625px) {
-    width:100% !important;
-    max-width:100% !important;
-    text-align:center !important;
-  }
 }
 
 /*\/\/\/\/\/\ Lettertype \/\/\/\/\/\*/

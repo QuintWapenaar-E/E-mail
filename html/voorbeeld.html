@@ -7,7 +7,7 @@
 <meta name="format-detection" content="telephone=no" />
 <title>Test</title>
 <style type="text/css">
-.red{color:#d21242}.dark-gray{color:#f90}img{display:block;line-height:100%;outline:none;text-decoration:none;margin:0}table{-premailer-cellspacing:0;-premailer-cellpadding:0}table.pushbox{-premailer-width:100%}table.sixhunderd,td.sixhunderd{-premailer-width:600}@media only screen and (max-width: 625px){[class=tablefullWidth],[class=fullWidth]{width:100% !important;max-width:100% !important;text-align:center !important}}.standaardText,.text td.fullWidth{font-family:Verdana, Geneva, sans-serif;color:#f90;font-size:14px;line-height:20px}.title{font-family:Verdana, Geneva, sans-serif;font-size:22px;line-height:28px;color:#d21242;font-weight:bold}.white .title{color:#fff}.white .title a{text-decoration:none;color:#fff}.paddingTop{padding-top:28px}.paddingBottom,.title,.text td.fullWidth{padding-bottom:28px}
+.red{color:#d21242}.dark-gray{color:#5e5e5e}img{display:block;text-decoration:none}.standaardText,.text td.fullWidth{font-family:Verdana, Geneva, sans-serif;color:#5e5e5e;font-size:14px;line-height:20px}.title{font-family:Verdana, Geneva, sans-serif;font-size:22px;line-height:28px;color:#d21242;font-weight:bold}.white .title{color:#fff}.white .title a{text-decoration:none;color:#fff}.paddingTop{padding-top:28px}.paddingBottom,.title,.text td.fullWidth{padding-bottom:28px}
 </style>
 <!--[if gte mso 15]>
 <style type="text/css">
@@ -48,6 +48,11 @@ table td {
   padding: 0;
   width: 100% !important;
 }
+img {
+  line-height: 100%;
+  outline: none;
+  margin: 0;
+}
 @media only screen and (max-width: 625px) {
   [class=wrapperPadding] {
     width:auto;
@@ -69,13 +74,13 @@ table td {
   }
 }
 </style>
-<table class="wrapperPadding pushbox" bgcolor="#F6931E" border="0">
+<table class="wrapperPadding" width="100%" cellspacing="0" cellpadding="0" bgcolor="#F6931E" border="0">
    <tr>
       <td align="center" valign="top">
-         <table class="fullWidth sixhunderd" border="0">
+         <table class="fullWidth" width="600" cellspacing="0" cellpadding="0" border="0">
             <tr>
-               <td class="fullWidth sixhunderd">
-                  <table border="0" align="left" class="fullWidth" width="315">
+               <td class="fullWidth" width="600">
+                  <table cellspacing="0" cellpadding="0" border="0" align="left" class="fullWidth" width="315">
                      <tr>
                         <td align="left" class="fullWidth paddingTop paddingBottom">
                            <table class="white" width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -92,7 +97,7 @@ table td {
                               <tr>
                                  <td class="standaardText">
                                     <div>
-                                       <!--{{capture assign=p1_link}}<a href="[P01_linkURL]" alt="[P01_TITEL] - BUTTON">[P01_BUTTON]</a>{{/capture}}{{assign var="p1_url" value='"'|explode:$p1_link}}-->
+                                       <!--{{capture assign=p1_link}}<a href="http://www.google.nl" alt="Google - BUTTON">Button</a>{{/capture}}{{assign var="p1_url" value='"'|explode:$p1_link}}-->
                                        <!--[if mso]>
                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{$p1_url[1]}}?utm_source={{$utm_source}}&utm_medium={{$utm_medium}}&utm_campaign={{$utm_campaign}}" style="height:40px; v-text-anchor:middle; width:120px; color:#FFFFFF;" arcsize="10%" stroke="f" fill="t">
                                           <v:fill type="tile" src="https://mail.eneco.nl/public/files/86/0/2014_template/images/bluebutton.jpg" color="#00afdb" />
@@ -124,13 +129,13 @@ table td {
    </tr>
 </table>
 
-<table class="wrapperPadding" bgcolor="#FFFFFF" width="100%" border="0">
+<table cellspacing="0" cellpadding="0" class="wrapperPadding" bgcolor="#FFFFFF" width="100%" border="0">
   <tr>
     <td align="center" valign="top">
-      <table class="tablefullWidth" border="0">
+      <table cellspacing="0" cellpadding="0" class="tablefullWidth" border="0">
         <tr>
-          <td class="fullWidth paddingTop sixhunderd">
-            <table width="100%" border="0">
+          <td class="fullWidth paddingTop" width="600">
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
               <tr>
                 <td align="center" class="title">
                   TITEL
